@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttendanceLite.UI", "Attend
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceLite.Domain", "AttendanceLite.Domain\AttendanceLite.Domain.csproj", "{E67B1361-E0FD-422A-B781-9E139A8F489C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceLite.WebForms", "AttendanceLite.WebForms\AttendanceLite.WebForms.csproj", "{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E67B1361-E0FD-422A-B781-9E139A8F489C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E67B1361-E0FD-422A-B781-9E139A8F489C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E67B1361-E0FD-422A-B781-9E139A8F489C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
