@@ -294,6 +294,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttendanceLite.Domain\AttendanceLite.Domain.csproj">
+      <Project>{35f17455-64e4-4d97-a190-05160a2ec0fa}</Project>
+      <Name>AttendanceLite.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AttendanceLite.Service\AttendanceLite.Service.csproj">
+      <Project>{b7ffd347-4a39-4f32-a3b9-4c5a9eabbd0f}</Project>
+      <Name>AttendanceLite.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
