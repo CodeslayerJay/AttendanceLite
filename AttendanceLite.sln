@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceLite.WebForms", "AttendanceLite.WebForms\AttendanceLite.WebForms.csproj", "{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttendanceLite.Data", "AttendanceLite.Data\AttendanceLite.Data.csproj", "{CCB77666-1470-4941-8949-96FF7B6DFC70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceLite.Data", "AttendanceLite.Data\AttendanceLite.Data.csproj", "{CCB77666-1470-4941-8949-96FF7B6DFC70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttendanceLite.Domain", "AttendanceLite.Domain\AttendanceLite.Domain.csproj", "{35F17455-64E4-4D97-A190-05160A2EC0FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceLite.Domain", "AttendanceLite.Domain\AttendanceLite.Domain.csproj", "{35F17455-64E4-4D97-A190-05160A2EC0FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttendanceLite.Service", "AttendanceLite.Service\AttendanceLite.Service.csproj", "{B7FFD347-4A39-4F32-A3B9-4C5A9EABBD0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceLite.Service", "AttendanceLite.Service\AttendanceLite.Service.csproj", "{B7FFD347-4A39-4F32-A3B9-4C5A9EABBD0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceLite.App", "AttendanceLite.App\AttendanceLite.App.csproj", "{8856C542-8709-4A6B-A071-39EC20FBC089}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3916A7EE-9B2B-4AF5-BC20-1B21A1411026}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCB77666-1470-4941-8949-96FF7B6DFC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CCB77666-1470-4941-8949-96FF7B6DFC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB77666-1470-4941-8949-96FF7B6DFC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{B7FFD347-4A39-4F32-A3B9-4C5A9EABBD0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7FFD347-4A39-4F32-A3B9-4C5A9EABBD0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7FFD347-4A39-4F32-A3B9-4C5A9EABBD0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8856C542-8709-4A6B-A071-39EC20FBC089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8856C542-8709-4A6B-A071-39EC20FBC089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8856C542-8709-4A6B-A071-39EC20FBC089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8856C542-8709-4A6B-A071-39EC20FBC089}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
