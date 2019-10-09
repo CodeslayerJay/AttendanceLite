@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B38E3C04-AF69-4D71-9CD0-52C3BC441F2C}</ProjectGuid>
+    <ProjectGuid>{3E560089-7C99-46B7-8559-901DB795E6A5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AttendanceLite.Data</RootNamespace>
-    <AssemblyName>AttendanceLite.Data</AssemblyName>
+    <RootNamespace>AttendanceApp.Services</RootNamespace>
+    <AssemblyName>AttendanceApp.Services</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,14 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,29 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="Migrations\201910092259485_InitialDBMigration.cs" />
-    <Compile Include="Migrations\201910092259485_InitialDBMigration.Designer.cs">
-      <DependentUpon>201910092259485_InitialDBMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Dto\TimeLogDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\IRepository.cs" />
-    <Compile Include="Repositories\ITimeLogRepository.cs" />
-    <Compile Include="Repositories\RepositoryBase.cs" />
-    <Compile Include="Repositories\TimeLogRepository.cs" />
-    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="TimeLogService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201910092259485_InitialDBMigration.resx">
-      <DependentUpon>201910092259485_InitialDBMigration.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\AttendanceLite.Data\AttendanceLite.Data.csproj">
+      <Project>{b38e3c04-af69-4d71-9cd0-52c3bc441f2c}</Project>
+      <Name>AttendanceLite.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AttendanceLite.Domain\AttendanceLite.Domain.csproj">
       <Project>{4e69997a-6b2e-4053-9ea5-c4213f978a2f}</Project>
       <Name>AttendanceLite.Domain</Name>
