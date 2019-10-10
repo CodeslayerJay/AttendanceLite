@@ -24,6 +24,7 @@ namespace AttendanceLite.UI
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/simplex.341.bootstrap.min.css",
                       "~/Content/site.css"));
         }
     }

@@ -10,17 +10,10 @@ namespace AttendanceLite.UI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly TimeLogService _timeLogService;
-
-        public HomeController()
-        {
-            _timeLogService = new TimeLogService();
-
-        }
+        
         public ActionResult Index()
         {
-            var newTimeLog = new TimeLogDto { Type = 0 };
-            _timeLogService.SaveTimeLog(newTimeLog);
+            
             return View();
         }
 
