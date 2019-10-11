@@ -12,22 +12,28 @@ namespace AttendanceApp.Services
 {
     public class TimeLogService
     {
-        private readonly UnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public TimeLogService()
+        public TimeLogService(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = new UnitOfWork();
+            _unitOfWork = unitOfWork;
         }
 
         public void SaveTimeLog(TimeLogDto dto)
         {
-            var timeLog = new TimeLog
+            _unitOfWork.TimeLogs.Add(MapToEntity(dto));
+            _unitOfWork.SaveChanges();
+        }
+
+        private TimeLog MapToEntity(TimeLogDto dto)
+        {
+            if (dto == null)
+                throw new ArgumentNullException("TimeLogDto cannot be empty or null.");
+
+            return new TimeLog
             {
                 Type = dto.Type
             };
-
-            _unitOfWork.TimeLogs.Add(timeLog);
-            _unitOfWork.SaveChanges();
         }
     }
 }

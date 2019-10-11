@@ -48,6 +48,9 @@
     <Reference Include="Autofac, Version=4.9.4.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.4.9.4\lib\net45\Autofac.dll</HintPath>
     </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -139,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\DependencyConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -214,6 +218,10 @@
     <ProjectReference Include="..\AttendanceLite.Data\AttendanceLite.Data.csproj">
       <Project>{b38e3c04-af69-4d71-9cd0-52c3bc441f2c}</Project>
       <Name>AttendanceLite.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AttendanceLite.Domain\AttendanceLite.Domain.csproj">
+      <Project>{4e69997a-6b2e-4053-9ea5-c4213f978a2f}</Project>
+      <Name>AttendanceLite.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

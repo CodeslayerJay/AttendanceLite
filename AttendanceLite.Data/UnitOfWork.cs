@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AttendanceLite.Data
 {
-    public class UnitOfWork : IDisposable
+    public class UnitOfWork : IDisposable, IUnitOfWork
     {
         public ITimeLogRepository TimeLogs { get; set; }
         private readonly ApplicationDbContext _context;
